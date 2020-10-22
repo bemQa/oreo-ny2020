@@ -1466,6 +1466,11 @@ span.error {
     margin-bottom: 18px;
 }
 
+.action-logo.disabled {
+    opacity: .5;
+    pointer-events: none;
+}
+
 .lk-page .container {
     max-width: 1090px;
 }
@@ -1852,15 +1857,15 @@ table td {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 42px;
-    height: 42px;
-    border-radius: 50px;
-    background: #FCED78;
+    width: 41px;
+    height: 41px;
+    background: url(../img/prizes/bottom.png) center no-repeat;
+    background-size: contain;
     margin-right: 15px;
 }
 
 .win-img img {
-    width: 31px;
+    width: 28px;
 }
 
 .lk-btn {
@@ -1957,7 +1962,7 @@ table td {
     align-items: center;
     max-width: 820px;
     width: 100%;
-    margin: 0 auto 50px;
+    margin: 40px auto 50px;
 }
 
 .date-filter {
@@ -2080,7 +2085,7 @@ table td {
     height: 17px;
     margin: auto;
     background: url(../img/search-icon.svg) center no-repeat;
-    background-size: cover;
+    background-size: contain;
     transition: all .2s linear;
 }
 
@@ -2089,9 +2094,17 @@ table td {
     background-size: cover;
 }
 
+.winners-table-wrapper {
+    max-width: 1060px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 80px 55px;
+    background: #B3E2F4;
+    border-radius: 30px;
+}
+
 .winners-table table th {
     text-align: left;
-    color: rgba(255, 255, 255, 0.7);
 }
 
 .winners-table table td {
@@ -2202,24 +2215,29 @@ table td {
     margin: auto;
 }
 
-.product-page-text {
-    position: relative;
-    font-weight: bold;
-    font-size: 27px;
-    line-height: 1;
-    text-align: center;  
-    margin-bottom: 20px;  
+.buy-oreo {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1060px;
+    width: 100%;
+    margin: 60px auto 50px;
+    padding: 10px 30px;
+    background: #fff;
+    border-radius: 30px;
 }
 
-.shops-logos {
-    position: relative;
-    max-width: 582px;
-    width: 100%;
-    margin: 0 auto 80px;
+.buy-oreo-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #44C7F4;
 }
 
 .products {
-    max-width: 960px;
+    max-width: 1060px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -2228,7 +2246,12 @@ table td {
 }
 
 .product {
-    margin-bottom: 40px;
+    max-width: 250px;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    background: #B3E2F4;
+    border-radius: 30px;
 }
 
 .product-img {
@@ -2236,34 +2259,29 @@ table td {
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
-    width: 169px;
-    height: 140px;
-    background: url(../img/product-bg.svg) center no-repeat;
-    background-size: contain;
     margin: 0 auto 10px;
 }
 
-.product-img img {
-    max-width: 157px;
-}
-
 .product-name {
-    max-width: 173px;
+    max-width: 225px;
     width: 100%;
     margin: auto;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 19px;
     line-height: 18px;
     text-align: center;
+    color: #055EB0;
 }
 
 .product-name span {
     display: block;
     font-weight: normal;
+    margin-top: 5px;
 }
 
 .fake-product {
-    width: 173px;
+    max-width: 250px;
+    width: 100%;
 }
 
 .action {
@@ -2992,6 +3010,10 @@ table td {
         height: 1500px;
     }
 
+    .winners-page::before {
+        height: 1000px;
+    }
+
     .inner-page::after {
         display: none;
     }
@@ -3152,16 +3174,25 @@ table td {
     .inner-title {
         font-size: 44px;
         line-height: 47px;
+        text-shadow: 0px 3px 0px #7EC3D9;
     }
 
     .filters {
         flex-direction: column;
-        margin: 0 auto 25px;
+        margin: 30px auto 25px;
     }
 
     .phone-filter {
         order: -1;
         margin-bottom: 20px !important;
+    }
+
+    .winners-table-wrapper {
+        padding: 25px 15px;
+    }
+
+    .winner-info {
+        min-width: 120px;
     }
 
     .winner-info .winner-name {
@@ -3229,39 +3260,37 @@ table td {
         max-width: 290px;
     }
 
-    .product-page-text {
-        max-width: 220px;
-        width: 100%;
-        font-size: 18px;
-        line-height: 20px;
-        margin: 0 auto 20px;
+    .buy-oreo {
+        position: relative;
+        flex-wrap: wrap;
+        padding: 10px 0;
+        background: none;
     }
 
-    .shops-logos {
-        max-width: 334px;
-        margin-bottom: 40px;
+    .buy-oreo::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -500px;
+        right: -500px;
+        bottom: 0;
+        margin: auto;
+        width: 1000px;
+        height: 100%;
+        background: #fff;
+    }
+
+    .buy-oreo * {
+        position: relative;
+    }
+
+    .buy-oreo-title {
+        width: 150px;
+        text-align: center;
     }
 
     .products {
-        max-width: 340px;
-    }
-
-    .product-img {
-        width: 156px;
-        height: 129px;
-    }
-
-    .product-name {
-        max-width: 160px;
-    }
-
-    .action {
-        left: 0;
-        width: 146px;
-        height: 109px;
-        margin: auto;
-        background: url(../img/action-mob.png) center no-repeat;
-        background-size: contain;
+        max-width: 250px;
     }
 
     .main-page {
@@ -3501,6 +3530,11 @@ table td {
 
     .lk-prizes {
         padding-left: 20px;
+    }
+    
+    .buy-oreo-title,
+    .buy-oreo-link {
+        width: 140px;
     }
 }
 
