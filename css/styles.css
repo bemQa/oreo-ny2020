@@ -458,7 +458,7 @@ body .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
     width: 40px !important;
     height: 100% !important;
     border-radius: 0 21px 21px 0;
-    background-color: #023f85;
+    background-color: #055EB0;
 }
 
 .image-select .select2-container .select2-selection__arrow b,
@@ -768,11 +768,11 @@ header {
     color: #B3E2F4;
 }
 
-.login-link {
+.profile-link {
     padding-left: 15px;
 }
 
-.login-link::before {
+.profile-link::before {
     content: '';
     position: absolute;
     top: -2px;
@@ -785,8 +785,25 @@ header {
     background-size: contain;
 }
 
-.login-link.active::before {
+.profile-link.active::before {
     background: url(../img/profile-icon-blue.svg) center no-repeat;
+    background-size: contain;
+}
+
+.login-link {
+    padding-left: 15px;
+}
+
+.login-link::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    bottom: 0;
+    width: 13px;
+    height: 13px;
+    margin: auto;
+    background: url(../img/login-icon.svg) center no-repeat;
     background-size: contain;
 }
 
@@ -813,7 +830,7 @@ header {
     margin: auto;
     border: 1px solid #D2311A;
     border-radius: 50px;
-    background: #1a4384;
+    background: #055EB0;
     overflow: hidden;
 }
 
@@ -1108,7 +1125,7 @@ footer a {
     text-align: center;
     font-size: 14px;
     line-height: 19px;
-    color: #1A4384;
+    color: #055EB0;
 }
 
 .popup-link {
@@ -1188,7 +1205,7 @@ footer a {
 }
 
 .close-popup span {
-    color: #1A4384;
+    color: #055EB0;
     margin-right: 5px;
     transition: all .2s linear;
 }
@@ -1440,6 +1457,11 @@ span.error {
     margin-bottom: 12px;
 }
 
+.actions-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .action-logo.pka-logo {
     margin-bottom: 18px;
 }
@@ -1507,7 +1529,7 @@ span.error {
     margin: auto;
     border: 4px solid #D2311A;
     border-radius: 50px;
-    background: #1a4384;
+    background: #055EB0;
     overflow: hidden;
 }
 
@@ -1914,27 +1936,18 @@ table td {
 }
 
 .inner-page:not(.lk-page) {
-    padding-top: 150px;
+    padding-top: 50px;
 }
 
 .inner-title {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    right: 0;
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    justify-content: center;
-    width: 795px;
-    height: 260px;
     font-weight: bold;
-    font-size: 47px;
-    line-height: 1;
+    font-size: 60px;
+    line-height: 100px;
+    text-align: center;
+    letter-spacing: 0.01em;
     text-transform: uppercase;
-    background: url(../img/inner-title-bg.png) center 0 no-repeat;
-    background-size: contain;
-    margin: auto;
+    color: #fff;
+    text-shadow: 0px 6px 0px #7EC3D9;
 }
 
 .filters {
@@ -2102,9 +2115,9 @@ table td {
 
 .faq-container {
     position: relative;
-    max-width: 1000px;
+    max-width: 1060px;
     width: 100%;
-    margin: 0 auto;
+    margin: 30px auto 0;
     display: flex;
     justify-content: space-between;
 }
@@ -2113,7 +2126,7 @@ table td {
     max-width: 520px;
     width: 100%;
     height: 480px;
-    margin: 0 auto;
+    margin: 40px auto 0;
 }
 
 .faq-item {
@@ -2156,9 +2169,13 @@ table td {
 }
 
 .feedback-wrap {
-    max-width: 360px;
+    max-width: 450px;
     width: 100%;
     margin: 0 auto;
+    padding: 40px 0;
+    background: #B3E2F4;
+    border-radius: 30px;
+    color: #055EB0;
 }
 
 .feedback-title {
@@ -2166,6 +2183,7 @@ table td {
     font-size: 27px;
     line-height: 1;
     text-align: center;
+    text-transform: uppercase;
     margin-bottom: 8px;
 }
 
@@ -2176,6 +2194,12 @@ table td {
     line-height: 1;
     text-align: center;
     margin: 0 auto 15px;
+}
+
+.feedback-form {
+    max-width: 340px;
+    width: 100%;
+    margin: auto;
 }
 
 .product-page-text {
@@ -2761,6 +2785,25 @@ table td {
         background: rgba(255, 255, 255, 0.7);
     }*/
 
+    .profile-link {
+        padding-left: 25px;
+    }
+
+    .menu-links .profile-link::before {
+        left: 0;
+        right: auto;
+        bottom: 3px;
+        width: 16px;
+        height: 22px;
+        background: url(../img/profile-icon.svg) center no-repeat;
+        background-size: contain;
+    }
+
+    .profile-link.active::before {
+        background: url(../img/profile-icon-blue.svg) center no-repeat;
+        background-size: contain;
+    }
+
     .login-link {
         padding-left: 25px;
     }
@@ -2772,11 +2815,6 @@ table td {
         width: 16px;
         height: 22px;
         background: url(../img/profile-icon.svg) center no-repeat;
-        background-size: contain;
-    }
-
-    .login-link.active::before {
-        background: url(../img/profile-icon-blue.svg) center no-repeat;
         background-size: contain;
     }
 
@@ -2876,7 +2914,9 @@ table td {
 
     .actions-wrapper {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        width: 100%;
     }
 
     .menu-links .action-logo {
@@ -2946,6 +2986,10 @@ table td {
         height: 1777px;
         background: url(../img/snow-decor-mob.png) center 0 repeat-x;
         background-size: auto;
+    }
+
+    .faq-page::before {
+        height: 1500px;
     }
 
     .inner-page::after {
@@ -3102,17 +3146,12 @@ table td {
     }
 
     .inner-page:not(.lk-page) {
-        padding-top: 100px;
+        padding-top: 10px;
     }
 
     .inner-title {
-        top: 100px;
-        width: 269px;
-        height: 70px;
-        font-size: 37px;
-        line-height: 40px;
-        background: url(../img/inner-title-bg-mob.svg) center 0 no-repeat;
-        background-size: contain;
+        font-size: 44px;
+        line-height: 47px;
     }
 
     .filters {
@@ -3161,7 +3200,7 @@ table td {
 
     .faq-wrap {
         max-width: 375px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 
     .faq-wrap.scroll-content {
@@ -3184,6 +3223,10 @@ table td {
         padding-left: 35px;
         font-size: 16px;
         line-height: 18px;
+    }
+
+    .feedback-form {
+        max-width: 290px;
     }
 
     .product-page-text {
