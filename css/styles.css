@@ -2327,6 +2327,10 @@ table td {
     mix-blend-mode: luminosity;
 }
 
+.main-block .container {
+    z-index: auto;
+}
+
 .oreo_merge {
     position: absolute;
     left: 0;
@@ -2518,6 +2522,7 @@ table td {
     max-width: 350px;
     width: 100%;
     padding-top: 60px;
+    z-index: 2;
 }
 
 .main-title {
@@ -3108,7 +3113,7 @@ table td {
 .actions-block {
     position: relative;
     min-height: 470px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .actions-block::before {
@@ -4061,7 +4066,8 @@ table td {
     }
 
     .santa {
-        right: 0;
+        left: -50px;
+        right: -50px;
         width: 375px;
         height: 471px;
         background-size: contain !important;
@@ -4201,6 +4207,8 @@ table td {
 
     .main-info {
         position: absolute;
+        top: -200px;
+        padding: 0;
     }
 
     .main-title {
@@ -4214,6 +4222,7 @@ table td {
 
     .plug-block .main-info {
         position: relative;
+        top: auto;
         padding-top: 20px;
     }
 
@@ -4231,6 +4240,149 @@ table td {
 
     .btn-plug span {
         font-size: 29px;
+    }
+
+    .steps-block::before {
+        top: -380px;
+        bottom: auto;
+        height: 1336px;
+        background: url(../img/steps-bg-mob.png) center no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .steps-block::after {
+        top: -245px;
+        left: 0;
+        right: 0;
+        height: 166px;
+        background: url(../img/steps-gifts-decor-mob.png) center no-repeat;
+        background-size: auto;
+    }
+
+    .steps {
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .step1 {
+        margin-bottom: 75px;
+        padding-left: 20px;
+    }
+
+    .step1::before {
+        top: -60px;
+        left: -290px;
+        width: 82px;
+        height: 121px;
+        background: url(../img/step1-num-mob.png) center no-repeat;
+        background-size: contain;
+    }
+
+    .step1 .step-img {
+        order: 1;
+    }
+
+    .step-info {
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    .step-text {
+        white-space: nowrap;
+    }
+
+    .step2 {
+        margin: 0 auto 30px;
+    }
+
+    .step2::before {
+        top: -100px;
+        right: -220px;
+        width: 149px;
+        height: 123px;
+        background: url(../img/step2-num-mob.png) center no-repeat;
+        background-size: contain;
+    }
+
+    .step3 {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .step3::before {
+        top: 0;
+        left: -250px;
+        width: 125px;
+        height: 131px;
+        background: url(../img/step3-num-mob.png) center no-repeat;
+        background-size: contain;
+    }
+    
+    .step3 .step-img img {
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+
+    .step3 .step-title {
+        width: auto;
+        text-align: center;
+    }
+
+    .game-block {
+        min-height: 950px;
+    }
+
+    .game-block::before {
+        background: url(../img/snow-decor-game.png) 45px 20px repeat-x, url(../img/game-bg.png) center 0 repeat-x;
+        background-size: cover;
+    }
+
+    .game-block::after {
+        display: none;
+    }
+    
+    .game-subtitle {
+        margin-top: 20px;
+    }
+
+    .game-points {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 115px;
+        margin: 20px auto 0;
+    }
+
+    .game-list.mobile-visible {
+        display: flex !important;
+        margin-bottom: 40px;
+    }
+
+    .game-cell {
+        width: 140px;
+        height: 140px;
+        margin: 10px auto;
+    }
+
+    .game-cell img {
+        width: 97px;
+    }
+
+    .game-update.mobile-visible {
+        display: flex;
+        position: relative;
+        top: auto;
+        left: auto;
+        bottom: auto;
+        width: 200px;
+        height: auto; 
+    }
+
+    .actions-block::before {
+        height: 780px;
+        background: url(../img/slider-bg.png) center repeat-x;
+        background-size: cover;
     }
 
 
@@ -4311,27 +4463,9 @@ table td {
     .buy-oreo-link {
         width: 140px;
     }
-}
 
-@media (max-width: 320px) {
-    .action {
-        width: 120px;
-        height: 90px;
-    }
-
-    .main-shops-logos {
-        top: 2274px;
-        background-size: 350px 78px;
-    }
-
-    .step1 .step-img {
-        top: -70px;
-        width: 265px;
-    }
-
-    .step3 .step-img {
-        width: 100px;
-        top: 0;
-        right: 15px;
+    .main-title {
+        font-size: 52px;
+        line-height: 56px;
     }
 }

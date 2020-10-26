@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'TT Limes Sans';
+    src: url("https://5ka.oreo.ru/fonts/TTLimesSans-Light.eot");
+    src: url("https://5ka.oreo.ru/fonts/TTLimesSans-Light.eot?#iefix") format("embedded-opentype"), url("https://5ka.oreo.ru/fonts/TTLimesSans-Light.woff2") format("woff2"), url("https://5ka.oreo.ru/fonts/TTLimesSans-Light.woff") format("woff"), url("https://5ka.oreo.ru/fonts/TTLimesSans-Light.ttf") format("truetype"), url("https://5ka.oreo.ru/fonts/TTLimesSans-Light.svg#TTLimesSans-Light") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Limes Sans';
+    src: url("https://5ka.oreo.ru/fonts/TTLimesSans-Regular.eot");
+    src: url("https://5ka.oreo.ru/fonts/TTLimesSans-Regular.eot?#iefix") format("embedded-opentype"), url("https://5ka.oreo.ru/fonts/TTLimesSans-Regular.woff2") format("woff2"), url("https://5ka.oreo.ru/fonts/TTLimesSans-Regular.woff") format("woff"), url("https://5ka.oreo.ru/fonts/TTLimesSans-Regular.ttf") format("truetype"), url("https://5ka.oreo.ru/fonts/TTLimesSans-Regular.svg#TTLimesSans-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Limes Sans';
+    src: url("https://5ka.oreo.ru/fonts/TTLimesSans-Bold.eot");
+    src: url("https://5ka.oreo.ru/fonts/TTLimesSans-Bold.eot?#iefix") format("embedded-opentype"), url("https://5ka.oreo.ru/fonts/TTLimesSans-Bold.woff2") format("woff2"), url("https://5ka.oreo.ru/fonts/TTLimesSans-Bold.woff") format("woff"), url("https://5ka.oreo.ru/fonts/TTLimesSans-Bold.ttf") format("truetype"), url("https://5ka.oreo.ru/fonts/TTLimesSans-Bold.svg#TTLimesSans-Bold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
+
+body {
+    font-family: 'TT Limes Sans';
+    font-weight: normal;
+    font-style: normal;
+    background-color: transparent;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: content-box;
+    height: 100%;
+    color: #fff;
+}
+
+.container.uf-container.container--custom {
+    color: #fff;
+    font-size: 21px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: content-box;
+    padding: 0;
+}
+
+.container.uf-container.container--custom::-webkit-scrollbar {
+    width: 0;
+}
+
+.container-tutorial__text {
+    font-family: 'TT Limes Sans';
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+
+.container-tutorial__text p {
+    margin-bottom: 20px;
+}
+
+.dropzone.dropzone--custom.dz-clickable {
+    background-color: transparent;
+    border: 2px solid rgba(39, 98, 158, .3);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.dropzone .dz-preview.dz-image-preview {
+    margin: 16px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid #27629E;
+}
+
+@media screen and (max-width:768px) {
+    .dropzone .dz-preview.dz-image-preview {
+        width: 200px;
+    }
+}
+
+.dropzone .dz-preview .dz-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.dropzone .dz-preview .dz-remove {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 0 !important;
+    font-weight: bold;
+    background-color: #FFF568;
+    border-color: #FFF568;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    border-radius: 15px;
+    z-index: 21;
+    color: #27629E;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    padding-left: 20px;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.dropzone .dz-preview .dz-remove::before {
+    content: 'X';
+    position: absolute;
+    left: 11px;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.dropzone .dz-preview .dz-remove:hover {
+    background: #6DC7E4;
+    text-decoration: none;
+}
+
+.uf-button-wrapper.button-wrapper--custom {
+    text-align: center
+}
+
+.uf-button-submit.button-submit--custom {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 200px;
+    width: 100%;
+    height: 48px;
+    font-family: 'TT Limes Sans';
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1;
+    margin: auto;
+    padding: 13px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #27629E;
+    background: #FFF568;
+    box-shadow: -2px 6px 0px #1D4586;
+    border-radius: 15px;
+    transition: all .3s linear;
+    overflow: hidden;
+    opacity: 1;
+    z-index: 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.uf-button-submit.button-submit--custom:hover,
+.uf-button-submit.button-submit--custom:focus {
+    background: #6DC7E4;
+    color: #27629E;
+}
+
+.uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom {
+    margin: 20px 0;
+}
+
+.dropzone.dz-started .dz-message span,
+.uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom button {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 200px;
+    width: 100%;
+    height: 48px;
+    font-family: 'TT Limes Sans';
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1;
+    margin: auto;
+    padding: 13px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #27629E;
+    background: #fff;
+    box-shadow: -2px 6px 0px #1D4586;
+    border-radius: 15px;
+    transition: all .3s linear;
+    overflow: hidden;
+    opacity: 1;
+    z-index: 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.dropzone.dz-started .dz-message span:hover,
+.uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom button:hover {
+    background: #6DC7E4;
+    color: #27629E;
+}
+
+.uf-controls-wrapper {
+    margin-top: 20px;
+}
+
+.uf-controls-wrapper .form-control {
+    max-width: 240px;
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    padding-left: 20px !important;
+    margin: 10px auto;
+    font-family: 'TT Limes Sans';
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 1;
+    color: #000;
+    background: #fff;
+    border: none;
+    border-radius: 25px;
+    transition: all .2s linear;
+    box-sizing: border-box;
+}
+
+.input-group.date {
+    /*overflow: hidden;*/
+    margin: 10px auto;
+    width: 100%;
+    min-width: 200px;
+    max-width: 240px;
+}
+
+.input-group.date input {
+    margin: 0;
+    min-width: 200px;
+}
+
+.input-group.date .input-group-addon {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: none;
+}
+
+.bootstrap-datetimepicker-widget {
+    z-index: 9999;
+    background: #fefefe;
+    color: #000;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+    width: 17em;
+}

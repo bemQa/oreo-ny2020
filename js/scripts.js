@@ -270,12 +270,12 @@ $(document).ready(function () {
             cssEase: 'linear',
             slidesToShow: 1,
             slidesToScroll: 1,
-            // autoplay: true,
-            // autoplaySpeed: 10000
+            autoplay: true,
+            autoplaySpeed: 10000
         });
     }
 
-    $('.game-update').click(function(e) {
+    $('.game-update.desktop-visible').click(function(e) {
         e.preventDefault();
         $('.game-list').fadeOut();
         // update cells
