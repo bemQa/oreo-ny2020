@@ -772,7 +772,7 @@ header {
     padding-left: 15px;
 }
 
-.profile-link::before {
+/*.profile-link::before {
     content: '';
     position: absolute;
     top: -2px;
@@ -788,7 +788,7 @@ header {
 .profile-link.active::before {
     background: url(../img/profile-icon-blue.svg) center no-repeat;
     background-size: contain;
-}
+}*/
 
 .login-link {
     padding-left: 15px;
@@ -873,6 +873,30 @@ header {
 .login-menu a.active {
     font-weight: bold;
     text-decoration: none;
+}
+
+.login-menu .logout-link {
+    position: absolute;
+    bottom: 10px;
+    right: 16px;
+    padding-right: 12px;
+    font-size: 14px;
+    line-height: 1;
+    color: #6DC7E4;
+    margin: 0;
+}
+
+.login-menu .logout-link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    margin: auto;
+    background: url(../img/logout-icon.svg) center no-repeat;
+    background-size: contain;
 }
 
 footer {
@@ -3548,6 +3572,7 @@ table td {
         display: block;
         font-size: 20px;
         line-height: 32px;
+        margin-top: 40px;
         margin-bottom: 20px;
     }
 
@@ -3572,6 +3597,12 @@ table td {
         bottom: auto;
         right: auto;
         font-size: 28px;
+    }
+
+    .login-menu .logout-link::after {
+        left: 90px;
+        width: 15px;
+        height: 15px;
     }
 
     .actions {
@@ -3624,7 +3655,7 @@ table td {
         padding: 20px 30px;
     }
 
-    footer::before {
+    footer:not(.main-footer)::before {
         background: url(../img/footer-bg.png) center no-repeat;
         background-size: cover;
     }
@@ -4218,6 +4249,12 @@ table td {
 
     .plug-block {
         min-height: 600px;
+    }
+
+    .plug-block::after {
+        top: 45px;
+        right: 0;
+        transform: scale(-1, 1);
     }
 
     .plug-block .main-info {

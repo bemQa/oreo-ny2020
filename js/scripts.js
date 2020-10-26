@@ -6,11 +6,11 @@ $(document).ready(function () {
             if(top >= 250) {
                 $('.menu-links').addClass('fixed');
                 $('.logo').prependTo('.menu-links');
-                $('.actions').hide();
+                $('.actions').not('.mobile-visible').hide();
             } else {
                 $('.menu-links').removeClass('fixed');
                 $('.logo').prependTo('header');
-                $('.actions').show();
+                $('.actions').not('.mobile-visible').show();
             }
             $('.wrapper section').each(function() {
                 var destination = $(this).offset().top-250;
