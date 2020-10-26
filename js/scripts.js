@@ -260,10 +260,58 @@ $(document).ready(function () {
     }
     openAccordion();
 
-    $('.prize-nav').click(function(e) {
+    if($('.tm-slider')) {
+        $('.tm-slider').slick({
+            dots: false,
+            arrows: true,
+            infinite: true,
+            speed: 300,
+            fade: true,
+            cssEase: 'linear',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            // autoplay: true,
+            // autoplaySpeed: 10000
+        });
+    }
+
+    $('.game-update').click(function(e) {
         e.preventDefault();
-        var data = $(this).data('nav');
-        $('.mob-prizes').hide();
-        $('.'+data).show();
+        $('.game-list').fadeOut();
+        // update cells
+        $('.game-list').fadeIn();
+    })
+
+    $('.game-cell').not('.winner').click(function() {
+        $(this).addClass('active');
+    });
+
+    $('.game-cell').eq(2).not('.winner').click(function() {
+        $(this).removeClass('active');
+        OpenPopup('end-points');
+    });
+
+    $('.game-cell').eq(3).not('.winner').click(function() {
+        OpenPopup('win-game-cert');
+    });
+
+    $('.game-cell').eq(4).not('.winner').click(function() {
+        OpenPopup('win-game-gold');
+    });
+
+    $('.game-cell').eq(5).not('.winner').click(function() {
+        OpenPopup('win-game-instagram');
+    });
+
+    $('.game-cell').eq(6).not('.winner').click(function() {
+        OpenPopup('win-game-postcard');
+    });
+
+    $('.game-cell').eq(7).not('.winner').click(function() {
+        OpenPopup('win-game-prediction');
+    });
+
+    $('.game-cell').eq(8).not('.winner').click(function() {
+        OpenPopup('win-game-stickers');
     });
 });
