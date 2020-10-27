@@ -2307,7 +2307,7 @@ table td {
 .product {
     max-width: 250px;
     width: 100%;
-    height: 250px;
+    min-height: 250px;
     margin-bottom: 20px;
     background: #B3E2F4;
     border-radius: 30px;
@@ -2318,7 +2318,7 @@ table td {
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 10px;
+    margin: 0 auto 6px;
 }
 
 .product-name {
@@ -3386,6 +3386,120 @@ table td {
     height: 100vh;
     max-height: 340px;
     width: 100%;
+}
+
+.tm-perekrestok-logo {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 180px;
+    height: 90px;
+    background: url(../img/tm-perekrestok/perekrestok-logo.svg) center no-repeat;
+    background-size: contain;
+}
+
+.tm-perekrestok-logo.fixed {
+    position: fixed;
+}
+
+.lk-perekrestok-page .profile-block {
+    margin-top: 80px;
+    padding-bottom: 90px;
+}
+
+.profile-card {
+    position: absolute;
+    margin-top: 15px;
+}
+
+.perekrestok-card {
+    position: relative;
+    font-size: 21px;
+    line-height: 26px;
+    color: #5FAF2D;
+    padding-left: 80px;
+}
+
+.perekrestok-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 39px;
+    background: url(../img/tm-perekrestok/card-perekrestok.png) center no-repeat;
+    background-size: contain;
+}
+
+.add-card-remark {
+    max-width: 140px;
+    font-size: 14px;
+    line-height: 1;
+    color: #6DC7E4;
+    margin-left: 80px;
+}
+
+.lk-perekrestok-page .lk-checks {
+    padding: 70px 40px 50px 70px;
+}
+
+.lk-perekrestok-prizes {
+    background: #5FAF2D;
+}
+
+.lk-perekrestok-prizes .lk-title {
+    color: #5FAF2D;
+}
+
+.lk-main-prize-img {
+    max-width: 292px;
+    width: 100%;
+    margin: auto;
+}
+
+.lk-main-prize-title {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.lk-main-prize-text {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.line {
+    max-width: 386px;
+    width: 100%;
+    height: 2px;
+    margin: 30px auto;
+    background: url(../img/tm-perekrestok/line.svg) center no-repeat;
+    background-size: contain;
+}
+
+.lk-perekrestok-prizes .icon {
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.lk-winner-info {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #24562B;
+}
+
+.tm-perekrestok-title {
+    text-shadow: 0px 6px 0px #9BBAC4, 4px 12px 6px rgba(0, 46, 116, 0.7);
+}
+
+.tm-products {
+    margin-top: 40px;
 }
 
 @media (max-width: 1366px) {
@@ -4476,6 +4590,62 @@ table td {
         width: 19px;
         height: 22px;
         left: -25px;
+    }
+
+    .tm-perekrestok-logo {
+        width: 140px;
+        height: 65px;
+        right: 60px;
+        z-index: 11;
+    }
+
+    .lk-perekrestok-page .profile-block {
+        margin-top: 10px;
+        padding-bottom: 80px;
+    }
+
+    .lk-perekrestok-page .profile-block::after {
+        height: 510px;
+    }
+
+    .profile-card {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 10px auto 0;
+        width: 280px;
+    }
+
+    .add-card-remark {
+        width: auto;
+    }
+
+    .lk-perekrestok-page .lk-checks {
+        padding: 70px 20px 50px;
+    }
+
+    .lk-perekrestok-page .lk-btn {
+        top: 970px;
+    }
+
+    .lk-perekrestok-prizes {
+        padding: 70px 20px 50px 20px;
+    }
+
+    .main-site-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 260px;
+        height: 60px;
+        margin: auto !important;
+        background: #FFFFFF;
+        border-radius: 40px;
+        color: #055EB0;
+    }
+
+    .tm-perekrestok-title {
+        text-shadow: 0px 3px 0px #9BBAC4, 4px 8px 6px rgba(0, 46, 116, 0.7);
     }
 }
 

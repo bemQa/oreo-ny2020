@@ -28,7 +28,7 @@ $(document).ready(function () {
         (this.classList.contains("active") === true) ? this.classList.remove("active") : this.classList.add("active");
 
         $('.menu-links').toggleClass('active');
-        $('.logo').toggleClass('fixed');
+        $('.logo, header .tm-perekrestok-logo').toggleClass('fixed');
         $('body').on('click', function (e) {
             var div = $('.menu-links, .burger');
 
