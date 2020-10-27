@@ -3248,41 +3248,41 @@ table td {
     z-index: 1;
 }
 
-
-
-.wrapper .error-page::before {
-    height: 100%;
-    background: radial-gradient(49.83% 55.68% at 49.83% 44.32%, #83DBEF 0%, rgba(69, 142, 185, 0) 100%) center 0 no-repeat;
-    background-size: 1020px 600px;
+.error-page::before {
+    height: 100% !important;
 }
 
-.error-img {
-    position: relative;
-    max-width: 968px;
-    width: 100%;
-    height: 575px;
-    margin: 0 auto;
+.error-title {
+    font-weight: bold;
+    font-size: 387px;
+    line-height: 400px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 7px 0px #7EC3D9;
 }
 
-.img-404 {
-    background: url(../img/404.png) center no-repeat;
-    background-size: contain;
+.error-desc {
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 47px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 0px #7EC3D9;
 }
 
-.img-500 {
-    background: url(../img/500.png) center no-repeat;
-    background-size: contain;
+.error-btn-wrap {
+    margin-top: 20px;
 }
 
-.wrapper .cookie-page::before {
-    height: 1200px;
-    background: radial-gradient(56.06% 62.64% at 47.88% 37.36%, #83DBEF 0%, rgba(69, 142, 185, 0) 100%) center no-repeat;
-    background-size: 100%;
-    opacity: .6;
-}
-
-.wrapper .cookie-page section::before {
-    display: none;
+.error-text {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 50px;
 }
 
 .main-cookie-h1 {
@@ -3295,32 +3295,6 @@ table td {
     text-align: center;
     text-transform: uppercase;
     margin: 0 auto 45px;
-}
-
-.main-cookie-h1::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -150px;
-    bottom: 0;
-    width: 213px;
-    height: 196px;
-    margin: auto;
-    background: url(../img/cookie-title-left.png) center no-repeat;
-    background-size: contain;
-}
-
-.main-cookie-h1::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -200px;
-    bottom: 0;
-    width: 246px;
-    height: 245px;
-    margin: auto;
-    background: url(../img/cookie-title-right.png) center no-repeat;
-    background-size: contain;
 }
 
 .cookie-page p {
@@ -4431,18 +4405,24 @@ table td {
     }
 
 
-    .img-404 {
-        max-width: 375px;
-        height: 300px;
-        background: url(../img/404-mob.png) center no-repeat;
-        background-size: 375px 300px;
+    .error-title {
+        font-size: 180px;
+        line-height: 218px;
+        text-shadow: 0px 6px 0px #7EC3D9;
     }
 
-    .img-500 {
-        max-width: 375px;
-        height: 340px;
-        background: url(../img/500-mob.png) center no-repeat;
-        background-size: 375px 340px;
+    .error-desc {
+        font-size: 20px;
+        line-height: 24px;
+        text-shadow: none;
+    }
+
+    .error-btn-wrap {
+        margin-top: 20px;
+    }
+
+    .error-text {
+        margin-top: 20px;
     }
 
     .main-cookie-h1 {
