@@ -3244,6 +3244,10 @@ table td {
     margin-bottom: 20px;
 }
 
+.plug-block .container {
+    z-index: 1;
+}
+
 
 
 .wrapper .error-page::before {
@@ -4094,6 +4098,10 @@ table td {
         height: 464px;
         background: url(../img/gifts-decor-main1-mob.png) center no-repeat;
         background-size: auto;
+    }
+
+    .main-block .container {
+        z-index: 1;
     }
 
     .santa {
