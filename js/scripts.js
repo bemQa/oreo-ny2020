@@ -212,7 +212,25 @@ $(document).ready(function () {
         $('.select2-results__options').scrollbar();
     });
 
+    function formatDate(date) {
+        var dd = date.getDate();
+        if (dd < 10) dd = '0' + dd;
 
+        var mm = date.getMonth() + 1;
+        if (mm < 10) mm = '0' + mm;
+
+        var yyyy = date.getFullYear();
+        if (yyyy < 10) yyyy = '0' + yyyy;
+
+        return dd + '.' + mm + '.' + yyyy;
+    }
+
+    if($('.datepicker-here').length) {
+        $('.datepicker-here').datepicker({
+            minDate: new Date(2020, 10, 1)
+        });
+        $('.datepicker-here').val(formatDate(new Date()));
+    }
 
     // восстановление пароля
     $('#restore-password .btn').click(function(e){

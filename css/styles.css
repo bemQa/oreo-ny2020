@@ -2002,20 +2002,44 @@ table td {
 
 .date-filter {
     position: relative;
-    max-width: 230px;
+    max-width: 180px;
     width: 100%;
-    padding-left: 115px;
+    padding-left: 95px;
 }
 
 .date-filter::before {
-    content: 'Неделя розыгрыша';
+    content: 'Дата розыгрыша';
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 120px;
+    width: 90px;
     height: 20px;
     margin: auto;
+}
+
+.datepicker-here {
+    max-width: 80px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFF568;
+    background: transparent;
+}
+
+.datepicker {
+    font-family: 'TT Limes Sans';
+    width: 200px;
+}
+
+.datepicker--day-name {
+    color: #055EB0;
+}
+
+.datepicker--cell.-current- {
+    color: #FFF568;
 }
 
 .date-filter .select2-container--below {
@@ -4404,7 +4428,6 @@ table td {
         background-size: cover;
     }
 
-
     .error-title {
         font-size: 180px;
         line-height: 218px;
@@ -4428,11 +4451,6 @@ table td {
     .main-cookie-h1 {
         font-size: 44px;
         margin-bottom: 30px;
-    }
-
-    .main-cookie-h1::before,
-    .main-cookie-h1::after {
-        display: none;
     }
 
     .cookie-page p {
