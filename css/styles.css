@@ -697,7 +697,7 @@ header {
     width: 100%;
     height: 82px;
     margin: auto;
-    z-index: 2;
+    z-index: 4;
 }
 
 .logo {
@@ -1448,7 +1448,8 @@ span.error {
 
 .menu-btn:hover svg path,
 .step2 .btn:hover svg path,
-.btn-plug:hover svg path {
+.btn-plug:hover svg path,
+.main-checks-btn:hover svg path {
     fill: #6DC7E4;
 }
 
@@ -3632,9 +3633,216 @@ table td {
     background-size: contain;
 }
 
+.main-block-perekrestok::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 820px;
+    margin: auto;
+    background: url(../img/tm-perekrestok/main-bg1.png) center repeat-x, radial-gradient(47.92% 95.84% at 50% 100%, #BBEAFF 0%, rgba(64, 196, 255, 0) 100%);
+    background-size: auto;
+}
+
+.main-block-perekrestok::after,
+.steps-block-perekrestok::after {
+    display: none;
+}
+
+.main-block-perekrestok .hand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 600px;
+    height: 568px;
+    background: url(../img/tm-perekrestok/hand.png) center no-repeat;
+    background-size: contain;
+    z-index: 3;
+}
+
+.main-gift1 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: -900px;
+    margin: auto;
+    z-index: 3;
+}
+
+.main-gift2 {
+    position: absolute;
+    top: 380px;
+    left: 0;
+    right: -1000px;
+    margin: auto;
+    z-index: 3;
+}
+
+.main-block-perekrestok .main-info {
+    margin-left: auto;
+    margin-right: 220px;
+    padding-top: 120px;
+}
+
+.main-date {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #A9E3F7;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.main-block-perekrestok .main-title {
+    font-size: 120px;
+    line-height: .9;
+    text-align: left;
+    text-shadow: 0px 6px 0px #9BBAC4, 4px 12px 6px rgba(0, 46, 116, 0.7)
+}
+
+.steps-block-perekrestok {
+    z-index: 2;
+}
+
+.steps-block-perekrestok::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 814px;
+    margin: auto;
+    background: url(../img/tm-perekrestok/steps-bg.png) center no-repeat;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.main-checks-btn {
+    position: absolute;
+    top: 400px;
+    left: 0;
+    right: 0;
+    width: 239px;
+    margin: auto;
+}
+
+.main-checks-btn span {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.steps-block-perekrestok .steps {
+    padding-top: 0;
+}
+
+.steps-block-perekrestok .step {
+    flex-direction: column;
+}
+
+.steps-block-perekrestok .step2 {
+    max-height: 100%;
+    margin-right: 0;
+}
+
+.steps-block-perekrestok .step3 {
+    max-width: 322px;
+}
+
+.steps-block-perekrestok .step1::before {
+    top: 80px;
+    left: -25px;
+    right: auto;
+    bottom: 0;
+    width: 112px;
+    height: 124px;
+    background: url(../img/tm-perekrestok/step1-num.png) center no-repeat;
+    background-size: contain;
+}
+
+.steps-block-perekrestok .step2::before {
+    top: 80px;
+    left: -50px;
+    right: auto;
+    bottom: 0;
+    width: 138px;
+    height: 148px;
+    background: url(../img/tm-perekrestok/step2-num.png) center no-repeat;
+    background-size: contain;
+}
+
+.steps-block-perekrestok .step3::before {
+    top: 80px;
+    left: -20px;
+    right: auto;
+    bottom: 0;
+    width: 82px;
+    height: 102px;
+    background: url(../img/tm-perekrestok/step3-num.png) center no-repeat;
+    background-size: contain;
+}
+
+.steps-block-perekrestok .step-img {
+    max-width: none;
+    min-height: 198px;
+}
+
+.step3 .step-img {
+    max-width: 276px;
+}
+
+.step3 .step-img img {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: auto;
+}
+
+.steps-block-perekrestok .step-info {
+    margin-bottom: 0;
+    padding-left: 70px;
+}
+
+.steps-block-perekrestok .step-title {
+    width: auto;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #BBCE00;
+    margin-bottom: 0;
+}
+
+.steps-block-perekrestok .step-text {
+    font-size: 26px;
+    line-height: 28px;
+    text-transform: none;
+}
+
+.steps-block-perekrestok .step3 .step-text span {
+    text-decoration: underline;
+}
+
+.steps-block-perekrestok .step3 .step-text b {
+    color: #BBCE00;
+}
+
+.steps-block-perekrestok + .main-footer {
+    padding-top: 210px;
+}
+
 @media (max-width: 1366px) {
     footer::before,
-    .steps-block::before {
+    .steps-block::before,
+    .steps-block-perekrestok::before {
         background-size: cover;
     }
 }
@@ -3660,6 +3868,14 @@ table td {
     .lk-checks,
     .lk-prizes {
         max-width: 480px;
+    }
+
+    .main-block-perekrestok .hand {
+        left: -10%;
+    }
+
+    .main-block-perekrestok .main-info {
+        margin-right: 100px;
     }
 }
 
@@ -4489,6 +4705,7 @@ table td {
     .main-info {
         position: absolute;
         top: -200px;
+        left: 0;
         padding: 0;
     }
 
@@ -4824,6 +5041,134 @@ table td {
     .perekrestok-winner-date {
         font-size: 16px;
     }
+
+    .main-block-perekrestok .container {
+        z-index: auto;
+    }
+
+    .main-gift1 {
+        top: 0;
+        right: -400px;
+    }
+
+    .main-block-perekrestok .hand {
+        width: 270px;
+        height: 255px;
+        bottom: auto;
+    }
+
+    .steps-block::before {
+        height: 1346px;
+        background: url(../img/tm-perekrestok/steps-bg-mob.png) center no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .main-date {
+        text-align: center;
+    }
+
+    .main-checks-btn {
+        top: 220px;
+    }
+
+    .main-checks-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -80px;
+        width: 183px;
+        height: 168px;
+        background: url(../img/tm-perekrestok/steps-line1.svg) center no-repeat;
+        background-size: contain;
+    }
+
+    .main-checks-btn::after {
+        content: '';
+        position: absolute;
+        top: 265px;
+        left: 0;
+        width: 129px;
+        height: 160px;
+        background: url(../img/tm-perekrestok/steps-line2.svg) center no-repeat;
+        background-size: contain;
+    }
+
+    .steps-block-perekrestok .step {
+        flex-direction: row;
+    }
+
+    .steps-block-perekrestok .step2 {
+        margin: 90px 0 100px;
+        justify-content: flex-end;
+    }
+
+    .steps-block-perekrestok .step3 {
+        max-width: 100%;
+    }
+
+    .steps-block-perekrestok .step::before {
+        transform: scale(.8);
+    }
+
+    .steps-block-perekrestok .step1::before {
+        top: -125px;
+        left: -15px;
+    }
+
+    .steps-block-perekrestok .step2::before {
+        top: -130px;
+        left: -15px;
+        right: 0;
+    }
+
+    .steps-block-perekrestok .step3::before {
+        top: -150px;
+        left: -15px;
+    }
+
+    .steps-block-perekrestok .step-img {
+        position: absolute;
+    }
+
+    .steps-block-perekrestok .step1 .step-img {
+        width: 216px;
+        top: 0;
+        left: 0;
+        right: -130px;
+        margin: auto;
+    }
+
+    .steps-block-perekrestok .step2 .step-img {
+        left: -230px;
+        right: 0;
+        width: 194px;
+        margin: auto;
+    }
+
+    .steps-block-perekrestok .step3 .step-img {
+        width: 229px;
+        top: -10px;
+        left: 0;
+        right: -200px;
+        margin: auto;
+    }
+
+    .steps-block-perekrestok .step-info {
+        padding-left: 0;
+        margin-top: 60px;
+    }
+
+    .steps-block-perekrestok .step-text {
+        white-space: normal;
+    }
+
+    .steps-block-perekrestok .step3 .step-title {
+        text-align: left;
+    }
+
+    .steps-block-perekrestok + .main-footer {
+        padding-top: 140px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -4857,5 +5202,21 @@ table td {
     .main-title {
         font-size: 52px;
         line-height: 56px;
+    }
+}
+
+@media (max-width: 320px) {
+    .steps-block-perekrestok .step2 .step-img {
+        left: -280px;
+    }
+
+    .steps-block-perekrestok .step3 .step-img {
+        right: -232px;
+    }
+
+    .tm-perekrestok-logo {
+        width: 125px;
+        height: 62px;
+        right: 50px;
     }
 }
