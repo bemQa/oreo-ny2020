@@ -814,6 +814,7 @@ header {
 .profile-links,
 .profile-menu {
     position: relative;
+    z-index: 1;
 }
 
 .profile-avatar-mini {
@@ -905,7 +906,6 @@ footer {
     min-height: 180px;
     color: #fff;
     padding: 18px 15px 20px;
-    z-index: 1;
 }
 
 .main-footer {
@@ -2838,6 +2838,10 @@ table td {
     filter: drop-shadow(0px 0px 64px #FFF568);
 }
 
+.prize-img.gold-prize {
+    filter: drop-shadow(0px 0px 15px rgba(255, 153, 0, 0.6));
+}
+
 .game-cell::after {
     content: '';
     position: absolute;
@@ -3793,11 +3797,11 @@ table td {
     min-height: 198px;
 }
 
-.step3 .step-img {
+.steps-block-perekrestok .step3 .step-img {
     max-width: 276px;
 }
 
-.step3 .step-img img {
+.steps-block-perekrestok .step3 .step-img img {
     position: relative;
     top: auto;
     left: auto;
@@ -3837,6 +3841,94 @@ table td {
 
 .steps-block-perekrestok + .main-footer {
     padding-top: 210px;
+}
+
+.prizes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.prizes:nth-child(3) {
+    margin-bottom: 70px;
+}
+
+.prize,
+.fake-prize {
+    max-width: 202px;
+    width: 100%;
+}
+
+.prize {
+    margin: 50px auto;
+}
+
+.prize-img {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 10px;
+    background: url(../img/prizes/bottom.png) center no-repeat;
+    background-size: contain;
+}
+
+.prize-img img {
+    width: 158px;
+}
+
+.prize-name {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1;
+    text-align: center;
+}
+
+.tm-prizes {
+    display: flex;
+    justify-content: space-between;
+    max-width: 770px;
+    width: 100%;
+    margin: 30px auto 0;
+}
+
+.tm-prize {
+    max-width: 320px;
+    width: 100%;
+}
+
+.tm-prize-img {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto 20px;
+}
+
+.tm-prize-text {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.tm-prize-text.tm-prize-perekrestok {
+    color: #BBCE00;
+}
+
+.tm-prize-text.tm-prize-5ka {
+    color: #FFEC2C;
+}
+
+.tm-prize-name {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
 }
 
 @media (max-width: 1366px) {
@@ -5168,6 +5260,31 @@ table td {
 
     .steps-block-perekrestok + .main-footer {
         padding-top: 140px;
+    }
+
+    .prize {
+        max-width: 145px;
+        margin: 30px 0;
+    }
+
+    .prize-img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .prize-img img {
+        width: 110px;
+    }
+
+    .tm-prizes {
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tm-prize {
+        margin: 40px auto;
     }
 }
 
