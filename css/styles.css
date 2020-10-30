@@ -2725,6 +2725,7 @@ table td {
 }
 
 .step3 .step-title {
+    position: relative;
     width: 225px;
     white-space: nowrap;
     margin-bottom: 50px;
