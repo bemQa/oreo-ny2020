@@ -2374,11 +2374,12 @@ table td {
     background: url(../img/gifts-decor-main1.png) center no-repeat;
     background-size: auto;
     mix-blend-mode: luminosity;
+    z-index: 0;
 }
 
-.main-block .container {
+/*.main-block .container {
     z-index: auto;
-}
+}*/
 
 .oreo_merge {
     position: absolute;
@@ -2617,7 +2618,7 @@ table td {
     background: url(../img/steps-gifts-decor.png) center no-repeat;
     background-size: auto;
     mix-blend-mode: luminosity;
-    z-index: 1;
+    z-index: 0;
 }
 
 .steps {
@@ -3647,7 +3648,7 @@ table td {
     width: 100%;
     height: 820px;
     margin: auto;
-    background: url(../img/tm-perekrestok/main-bg1.png) center repeat-x, radial-gradient(47.92% 95.84% at 50% 100%, #BBEAFF 0%, rgba(64, 196, 255, 0) 100%);
+    background: url(../img/tm-perekrestok/main-bg1.png) center repeat-x, radial-gradient(47.92% 95.84% at 50% 100%, #BBEAFF 0%, rgba(64, 196, 255, 0) 60%);
     background-size: auto;
 }
 
@@ -3982,13 +3983,14 @@ table td {
     }
 
     .logo {
+        position: fixed;
         max-width: 126px;
         left: 15px;
         z-index: 11;
     }
 
     .burger {
-        position: absolute;
+        position: fixed;
         top: 20px;
         right: 15px;
         display: block;
@@ -4520,6 +4522,7 @@ table td {
     .buy-oreo {
         position: relative;
         flex-wrap: wrap;
+        margin: 30px auto;
         padding: 10px 0;
         background: none;
     }
@@ -4799,12 +4802,15 @@ table td {
         position: absolute;
         top: -200px;
         left: 0;
+        right: 0;
+        margin: auto;
         padding: 0;
     }
 
     .main-title {
         font-size: 55px;
         line-height: 60px;
+        text-shadow: 0px 4px 0px #7EC3D9;
     }
 
     .plug-block {
@@ -4889,11 +4895,11 @@ table td {
     }
 
     .step2 {
-        margin: 0 auto 30px;
+        margin: 10px auto 30px;
     }
 
     .step2::before {
-        top: -100px;
+        top: -110px;
         right: -220px;
         width: 149px;
         height: 123px;
@@ -4931,7 +4937,7 @@ table td {
     }
 
     .game-block::before {
-        background: url(../img/snow-decor-game.png) 45px 20px repeat-x, url(../img/game-bg.png) center 0 repeat-x;
+        background: url(../img/snow-decor-game.png) 60% 20px repeat-x, url(../img/game-bg.png) center 0 repeat-x;
         background-size: cover;
     }
 
@@ -4964,6 +4970,11 @@ table td {
 
     .game-cell img {
         width: 97px;
+    }
+
+    .game-cell-winner {
+        width: 122px;
+        height: 122px;
     }
 
     .game-update.mobile-visible {
@@ -5053,11 +5064,11 @@ table td {
         left: 0;
         right: 0;
         margin: 10px auto 0;
-        width: 280px;
+        width: 265px;
     }
 
     .add-card-remark {
-        width: auto;
+        max-width: none;
     }
 
     .lk-perekrestok-page .lk-checks {
@@ -5135,13 +5146,20 @@ table td {
         font-size: 16px;
     }
 
+    .main-block-perekrestok::before {
+        top: -100px;
+        height: 534px;
+        background: url(../img/tm-perekrestok/snow-decor-main1-mob.png) center 60px repeat-x, radial-gradient(49.83% 55.68% at 49.83% 44.32%, #27C2EE 0%, rgba(39, 194, 238, 0) 88.26%);
+        background-size: auto;
+    }
+
     .main-block-perekrestok .container {
         z-index: auto;
     }
 
     .main-gift1 {
         top: 0;
-        right: -400px;
+        right: -350px;
     }
 
     .main-block-perekrestok .hand {
@@ -5150,7 +5168,7 @@ table td {
         bottom: auto;
     }
 
-    .steps-block::before {
+    .steps-block-perekrestok::before {
         height: 1346px;
         background: url(../img/tm-perekrestok/steps-bg-mob.png) center no-repeat;
         background-size: 100% 100%;
@@ -5287,6 +5305,21 @@ table td {
     .tm-prize {
         margin: 40px auto;
     }
+
+    .datepickers-container {
+        width: 100%;
+    }
+
+    .datepicker.active {
+        left: 0 !important;
+        right: 0;
+        margin: auto;
+    }
+
+    .steps-block-perekrestok .main-title {
+        text-shadow: 0px 4px 0px #9BBAC4, 4px 12px 6px rgba(0, 46, 116, 0.7);
+    }
+
 }
 
 @media (max-width: 500px) {
