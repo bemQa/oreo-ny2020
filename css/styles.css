@@ -3221,6 +3221,10 @@ table td {
 }
 
 .tm-slide-logo {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    max-width: 280px;
     min-height: 62px;
     margin-bottom: 22px;
 }
