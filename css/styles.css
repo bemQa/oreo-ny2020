@@ -2377,15 +2377,16 @@ table td {
     z-index: 0;
 }
 
-/*.main-block .container {
+.main-block .container {
     z-index: auto;
-}*/
+}
 
 .oreo_merge {
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
+    z-index: 1;
 }
 
 .oreo_merge1 {
@@ -2541,6 +2542,7 @@ table td {
     margin: auto;
     background: url(../img/santa1.png) center no-repeat;
     animation: 15s santa infinite steps(1, end);
+    z-index: 1;
 }
 
 @keyframes santa {
