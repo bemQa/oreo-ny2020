@@ -1411,6 +1411,10 @@ span.error {
     pointer-events: none;
 }
 
+.btn-5ka span {
+    color: #fff;
+}
+
 @supports (-webkit-touch-callout: none) {
     .btn span,
     .menu-btn span {
@@ -1444,6 +1448,10 @@ span.error {
 
 .btn:hover svg path {
     fill: #FFFAB8;
+}
+
+.btn-5ka:hover svg path {
+    fill: #ff4e42;
 }
 
 .menu-btn:hover svg path,
@@ -3411,11 +3419,23 @@ table td {
     background-size: contain;
 }
 
-.tm-perekrestok-logo.fixed {
+.tm-5ka-logo {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 180px;
+    height: 88px;
+    background: url(../img/tm-5ka/5ka-logo.svg) center no-repeat;
+    background-size: contain;
+}
+
+.tm-perekrestok-logo.fixed,
+.tm-5ka-logo.fixed {
     position: fixed;
 }
 
-.lk-perekrestok-page .profile-block {
+.lk-perekrestok-page .profile-block,
+.lk-5ka-page .profile-block  {
     margin-top: 80px;
     padding-bottom: 90px;
 }
@@ -3433,6 +3453,14 @@ table td {
     padding-left: 80px;
 }
 
+.pka-card {
+    position: relative;
+    font-size: 21px;
+    line-height: 26px;
+    color: #EB2316;
+    padding-left: 80px;
+}
+
 .perekrestok-card::before {
     content: '';
     position: absolute;
@@ -3444,15 +3472,28 @@ table td {
     background-size: contain;
 }
 
+.pka-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 39px;
+    background: url(../img/tm-5ka/card-5ka.png) center no-repeat;
+    background-size: contain;
+}
+
 .add-card-remark {
     max-width: 140px;
+    font-weight: 300;
     font-size: 14px;
     line-height: 1;
     color: #6DC7E4;
     margin-left: 80px;
 }
 
-.lk-perekrestok-page .lk-checks {
+.lk-perekrestok-page .lk-checks,
+.lk-5ka-page .lk-checks {
     padding: 70px 40px 50px 70px;
 }
 
@@ -3460,14 +3501,36 @@ table td {
     background: #5FAF2D;
 }
 
+.lk-5ka-prizes {
+    background: #EB2316;
+}
+
 .lk-perekrestok-prizes .lk-title {
     color: #5FAF2D;
+}
+
+.lk-5ka-prizes .lk-title {
+    color: #EB2316;
 }
 
 .lk-main-prize-img {
     max-width: 292px;
     width: 100%;
     margin: auto;
+}
+
+.lk-5ka-prizes .lk-main-prize-img {
+    position: relative;
+    max-width: 365px;
+    width: 100%;
+    height: 130px;
+    margin: auto;
+}
+
+.lk-5ka-prizes .lk-main-prize-img img {
+    position: absolute;
+    top: -50px;
+    filter: drop-shadow(0px 0px 15px #fff);
 }
 
 .lk-main-prize-title {
@@ -3495,7 +3558,8 @@ table td {
     background-size: contain;
 }
 
-.lk-perekrestok-prizes .icon {
+.lk-perekrestok-prizes .icon,
+.lk-5ka-prizes .icon {
     display: block;
     margin: 0 auto 5px;
 }
@@ -3505,6 +3569,10 @@ table td {
     line-height: 20px;
     text-align: center;
     color: #24562B;
+}
+
+.lk-5ka-prizes .lk-winner-info {
+    color: #fff;
 }
 
 .tm-perekrestok-title {
@@ -3523,6 +3591,10 @@ table td {
     padding: 40px 15px;
     background: #5FAF2D;
     border-radius: 30px;
+}
+
+.pka-winners-wrapper {
+    background: #EB2316;
 }
 
 .card-decor {
@@ -3582,6 +3654,11 @@ table td {
     background-size: contain;
 }
 
+.pka-winners-wrapper .perekrestok-winner::before {
+    background: url(../img/tm-5ka/marker.svg) center no-repeat;
+    background-size: contain;
+}
+
 .perekrestok-winner-name {
     width: 190px;
     font-weight: bold;
@@ -3611,6 +3688,11 @@ table td {
     color: #005A28;
 }
 
+.pka-winners-wrapper .perekrestok-winners-prev,
+.pka-winners-wrapper .perekrestok-winners-next {
+    color: #fff;
+}
+
 .perekrestok-winners-prev {
     padding-left: 15px;
 }
@@ -3632,6 +3714,11 @@ table td {
     background-size: contain;
 }
 
+.pka-winners-wrapper .perekrestok-winners-prev::before {
+    background: url(../img/tm-5ka/arrow-left.svg) center no-repeat;
+    background-size: contain;
+}
+
 .perekrestok-winners-next::before {
     content: '';
     position: absolute;
@@ -3642,6 +3729,11 @@ table td {
     width: 11px;
     height: 11px;
     background: url(../img/tm-perekrestok/arrow-right.svg) center no-repeat;
+    background-size: contain;
+}
+
+.pka-winners-wrapper .perekrestok-winners-next::before {
+    background: url(../img/tm-5ka/arrow-right.svg) center no-repeat;
     background-size: contain;
 }
 
@@ -3676,6 +3768,18 @@ table td {
     z-index: 3;
 }
 
+.main-block-5ka .santa-5ka {
+    position: absolute;
+    top: -82px;
+    left: 0;
+    margin: auto;
+    width: 728px;
+    height: 695px;
+    background: url(../img/tm-5ka/santa.png) center no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
 .main-gift1 {
     position: absolute;
     top: 50px;
@@ -3683,6 +3787,11 @@ table td {
     right: -900px;
     margin: auto;
     z-index: 3;
+}
+
+.main-block-5ka .main-gift1 {
+    top: 150px;
+    right: -1050px;
 }
 
 .main-gift2 {
@@ -3694,10 +3803,19 @@ table td {
     z-index: 3;
 }
 
+.main-block-5ka .main-gift2 {
+    right: -1200px;
+}
+
 .main-block-perekrestok .main-info {
     margin-left: auto;
     margin-right: 220px;
     padding-top: 120px;
+}
+
+.main-block-5ka .main-info {
+    padding-top: 25px;
+    z-index: 3;
 }
 
 .main-date {
@@ -3709,6 +3827,10 @@ table td {
     color: #A9E3F7;
     margin-bottom: 20px;
     padding-left: 10px;
+}
+
+.main-block-5ka .btn-5ka {
+    margin: 0 0 0 10px;
 }
 
 .main-block-perekrestok .main-title {
@@ -3763,6 +3885,10 @@ table td {
     margin-right: 0;
 }
 
+.steps-block-5ka .step2 {
+    margin-right: 50px;
+}
+
 .steps-block-perekrestok .step3 {
     max-width: 322px;
 }
@@ -3778,6 +3904,12 @@ table td {
     background-size: contain;
 }
 
+.steps-block-5ka .step1::before {
+    top: 105px;
+    left: -210px;
+    right: 0;
+}
+
 .steps-block-perekrestok .step2::before {
     top: 80px;
     left: -50px;
@@ -3787,6 +3919,10 @@ table td {
     height: 148px;
     background: url(../img/tm-perekrestok/step2-num.png) center no-repeat;
     background-size: contain;
+}
+
+.steps-block-5ka .step2::before {
+    top: 105px;
 }
 
 .steps-block-perekrestok .step3::before {
@@ -3800,13 +3936,27 @@ table td {
     background-size: contain;
 }
 
+.steps-block-5ka .step3::before {
+    top: 105px;
+    background: url(../img/tm-5ka/step3-num.png) center no-repeat;
+    background-size: contain;
+}
+
 .steps-block-perekrestok .step-img {
     max-width: none;
     min-height: 198px;
 }
 
+.steps-block-5ka .step-img {
+    filter: drop-shadow(0px -14px 64px rgba(39, 194, 238, 0.7));
+}
+
 .steps-block-perekrestok .step3 .step-img {
     max-width: 276px;
+}
+
+.steps-block-5ka .step3 .step-img {
+    max-width: 327px;
 }
 
 .steps-block-perekrestok .step3 .step-img img {
@@ -3945,6 +4095,10 @@ table td {
     .steps-block-perekrestok::before {
         background-size: cover;
     }
+
+    .main-block-5ka .santa-5ka {
+        left: -10%;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -3976,6 +4130,9 @@ table td {
 
     .main-block-perekrestok .main-info {
         margin-right: 100px;
+    }
+    .main-block-5ka .santa-5ka {
+        left: -20%;
     }
 }
 
@@ -5049,19 +5206,22 @@ table td {
         left: -25px;
     }
 
-    .tm-perekrestok-logo {
+    .tm-perekrestok-logo,
+    .tm-5ka-logo {
         width: 140px;
         height: 65px;
         right: 60px;
         z-index: 11;
     }
 
-    .lk-perekrestok-page .profile-block {
+    .lk-perekrestok-page .profile-block,
+    .lk-5ka-page .profile-block {
         margin-top: 10px;
         padding-bottom: 80px;
     }
 
-    .lk-perekrestok-page .profile-block::after {
+    .lk-perekrestok-page .profile-block::after,
+    .lk-5ka-page .profile-block::after {
         height: 510px;
     }
 
@@ -5077,15 +5237,18 @@ table td {
         max-width: none;
     }
 
-    .lk-perekrestok-page .lk-checks {
+    .lk-perekrestok-page .lk-checks,
+    .lk-5ka-page .lk-checks {
         padding: 70px 20px 50px;
     }
 
-    .lk-perekrestok-page .lk-btn {
+    .lk-perekrestok-page .lk-btn,
+    .lk-5ka-page .lk-btn {
         top: 970px;
     }
 
-    .lk-perekrestok-prizes {
+    .lk-perekrestok-prizes,
+    .lk-5ka-prizes {
         padding: 70px 20px 50px 20px;
     }
 
@@ -5232,6 +5395,10 @@ table td {
         left: -15px;
     }
 
+    .steps-block-5ka .step1::before {
+        right: auto;
+    }
+
     .steps-block-perekrestok .step2::before {
         top: -130px;
         left: -15px;
@@ -5326,6 +5493,20 @@ table td {
         text-shadow: 0px 4px 0px #9BBAC4, 4px 12px 6px rgba(0, 46, 116, 0.7);
     }
 
+    .main-block-5ka .santa-5ka {
+        top: -35px;
+        left: -65px;
+        width: 326px;
+        height: 308px;
+    }
+
+    .main-block-5ka .main-gift1 {
+        top: 25px;
+        left: auto;
+        right: -20px;
+        width: 129px;
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -5371,9 +5552,14 @@ table td {
         right: -232px;
     }
 
-    .tm-perekrestok-logo {
+    .tm-perekrestok-logo,
+    .tm-5ka-logo {
         width: 125px;
         height: 62px;
         right: 50px;
+    }
+
+    .main-block-5ka .santa-5ka {
+        left: -95px;
     }
 }
