@@ -846,7 +846,7 @@ header {
     top: -10px;
     left: -15px;
     width: 146px;
-    height: 260px;
+    min-height: 260px;
     background: #173F80;
     border-radius: 15px;
     padding: 40px 10px 10px 16px;
