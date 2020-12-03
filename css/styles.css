@@ -4820,19 +4820,23 @@ table td {
     .main-block .container {
         z-index: 1;
     }
-
+    
+    /*раскомментировать animation:none чтобы отключить анимацию*/
     .santa {
         left: -50px;
         right: -50px;
         width: 375px;
         height: 471px;
         background-size: contain !important;
+        /*animation: none;*/
     }
 
     .oreo_merge {
         transform: scale(.6);
+        /*animation: none;*/
     }
 
+    /*эти стили закомментировать*/
     .oreo_merge1 {
         top: -120px;
         left: -350px;
@@ -4872,6 +4876,47 @@ table td {
         top: -150px;
         right: -220px;
     }
+
+    /*а эти раскомментировать, чтобы отключить анимацию на мобильных*/
+    /*.oreo_merge1 {
+        top: 20px;
+        left: -350px;
+    }
+
+    .oreo_merge2 {
+        top: 120px;
+        left: -240px;
+    }
+
+    .oreo_merge2-1 {
+        top: -10px;
+        right: -185px;
+    }
+
+    .oreo_merge3 {
+        top: 160px;
+        right: -300px;
+    }
+
+    .oreo_merge4 {
+        top: 170px;
+        left: -350px;
+    }
+
+    .oreo_merge5 {
+        top: 70px;
+        right: -340px;
+    }
+
+    .oreo_merge6 {
+        top: 180px;
+        left: -170px;
+    }
+
+    .oreo_merge7 {
+        top: 190px;
+        right: -220px;
+    }*/
 
     @keyframes oreo_merge1 {
         from {
